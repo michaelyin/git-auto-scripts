@@ -32,3 +32,9 @@ link_affix=".git"
 
 delete_a_branch yoo $branch_to_be_deleted
 delete_a_branch yoo-job $branch_to_be_deleted
+delete_a_branch yoo-domain $branch_to_be_deleted
+
+#yoo-correct
+echo "yoo-correct microservice ..."
+link_prefix="ssh://git@git.elanking.com:922/microservice/yoocorrect/"
+delete_a_branch app $branch_to_be_deleted

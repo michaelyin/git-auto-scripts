@@ -38,3 +38,8 @@ delete_a_branch yoomath $branch_to_be_deleted
 delete_a_branch yoomath-wx $branch_to_be_deleted
 delete_a_branch yoomath-m $branch_to_be_deleted
 delete_a_branch channel-sales $branch_to_be_deleted
+
+#yoo-correct web
+link_prefix="ssh://git@git.elanking.com:922/web/yoocorrect/"
+
+delete_a_branch app $branch_to_be_deleted

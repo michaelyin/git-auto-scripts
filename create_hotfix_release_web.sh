@@ -12,7 +12,15 @@ create_a_branch()
   echo "create $branch for project $project_name ..."
   git clone $git_link
   cd $project_name
-  git checkout -b $branch
+
+  if [ $branch = "release" ]
+  then
+      git checkout develop
+      git checkout -b $branch develop
+  else
+      git checkout -b $branch
+  fi
+
   git push origin $branch
 
   echo "done creating $branch with $project_name"
@@ -40,3 +48,6 @@ create_a_branch yoomath-wx $branch_to_be_created
 create_a_branch yoomath-m $branch_to_be_created
 create_a_branch channel-sales $branch_to_be_created
 
+#yoo-correct web
+link_prefix="ssh://git@git.elanking.com:922/web/yoocorrect/"
+create_a_branch app $branch_to_be_created

@@ -11,7 +11,14 @@ create_a_branch()
   echo "create $branch for project $project_name ..."
   git clone $git_link
   cd $project_name
-  git checkout -b $branch
+  if [ $branch = "release" ]
+  then
+      git checkout develop
+      git checkout -b $branch develop
+  else
+      git checkout -b $branch
+  fi
+
   git push origin $branch
 
   echo "done creating $branch with $project_name"
@@ -32,3 +39,8 @@ link_affix=".git"
 
 create_a_branch yoo $branch_to_be_created
 create_a_branch yoo-job $branch_to_be_created
+create_a_branch yoo-domain $branch_to_be_created
+
+#yoo-correct
+link_prefix="ssh://git@git.elanking.com:922/microservice/yoocorrect/"
+create_a_branch app $branch_to_be_created
