@@ -27,7 +27,7 @@ fi
 branch_to_be_deleted=$1
 echo "branch to be deleted: $branch_to_be_deleted"
 
-link_prefix="ssh://git@git.elanking.com:922/platform/"
+link_prefix="ssh://git@git.exxxxx.com:922/platform/"
 link_affix=".git"
 
 delete_a_branch yoo $branch_to_be_deleted
@@ -36,5 +36,5 @@ delete_a_branch yoo-domain $branch_to_be_deleted
 
 #yoo-correct
 echo "yoo-correct microservice ..."
-link_prefix="ssh://git@git.elanking.com:922/microservice/yoocorrect/"
+link_prefix="ssh://git@git.exxxxx.com:922/microservice/yoocorrect/"
 delete_a_branch app $branch_to_be_deleted
