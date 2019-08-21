@@ -36,7 +36,7 @@ fi
 branch_to_be_created=$1
 echo "branch to be created: $branch_to_be_created"
 
-link_prefix="ssh://git@git.elanking.com:922/web/"
+link_prefix="ssh://git@git.exxxxx.com:922/web/"
 link_affix=".git"
 
 create_a_branch yoomathm $branch_to_be_created
@@ -49,5 +49,5 @@ create_a_branch yoomath-m $branch_to_be_created
 create_a_branch channel-sales $branch_to_be_created
 
 #yoo-correct web
-link_prefix="ssh://git@git.elanking.com:922/web/yoocorrect/"
+link_prefix="ssh://git@git.exxxxx.com:922/web/yoocorrect/"
 create_a_branch app $branch_to_be_created
