@@ -34,7 +34,7 @@ fi
 branch_to_be_created=$1
 echo "branch to be created: $branch_to_be_created"
 
-link_prefix="ssh://git@git.elanking.com:922/platform/"
+link_prefix="ssh://git@git.exxxxxx.com:922/platform/"
 link_affix=".git"
 
 create_a_branch yoo $branch_to_be_created
@@ -42,5 +42,5 @@ create_a_branch yoo-job $branch_to_be_created
 create_a_branch yoo-domain $branch_to_be_created
 
 #yoo-correct
-link_prefix="ssh://git@git.elanking.com:922/microservice/yoocorrect/"
+link_prefix="ssh://git@git.exxxxx.com:922/microservice/yoocorrect/"
 create_a_branch app $branch_to_be_created
